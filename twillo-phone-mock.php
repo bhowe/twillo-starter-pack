@@ -4,7 +4,7 @@
 
 <h2>TWILLO call form mockup</h2>
 
-<form action="/controller.php" method="POST" >
+<form action="controller.php" method="POST" >
   Called:<br>
   <input type="text" name="Called" value="601111111">
   <br>
@@ -21,7 +21,7 @@
   <br> ToZip:<br>
   <input type="text" name="ToZip" value="39232">
   <br>  CallSid:<br>
-  <input type="text" name=" CallSid" value="sfdsfdsfdsfsdfdsfd">
+  <input type="text" name=" CallSid" value="<?php echo uniqid('', true); ?>">
   <br> TO:<br>
   <input type="text" name="To" value="+11111111111">
   <br> CallerZip:<br>
@@ -40,7 +40,7 @@
   <br><br>  From:<br>
   <input type="text" name=" From" value="+1601111111">
   <br><br> AccountSid:<br>
-  <input type="text" name="AccountSid" value="5831563fb261642d639a7580eb5ac6e">
+  <input type="text" name="AccountSid" value="<?php echo uniqid('', true); ?>">
   <br><br> CalledCountry:<br>
   <input type="text" name="CalledCountry" value="US">
   <br><br> CallerCity:<br>
